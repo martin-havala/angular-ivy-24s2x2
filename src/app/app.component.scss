@@ -1,6 +1,6 @@
 @use '~@angular/material' as mat;
 
-@include mat.core($typography);
+@include mat.core();
 
 @page {
   size: A4;

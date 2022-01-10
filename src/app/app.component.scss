@@ -1,0 +1,17 @@
+@use '~@angular/material' as mat;
+
+@include mat.core($typography);
+
+@page {
+  size: A4;
+  margin: 4cm;
+  @bottom-left {
+    content: 'Page ' counter(page) ' of ' counter(pages);
+  }
+}
+@page:first {
+  margin: 0cm;
+}
+h2 {
+  page-break-before: always;
+}
